@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="intro-container">
+        <p class="head-start">Geography Quiz</p>
+        <p>Total 10 questions</p>
+        <p>1 mark for each question</p>
+        <button class="button" id="start">Start Quiz</button>
+      </div>
+      <div class="first-container">
+        <div class="container">
+          <p class="score" id="timer">0:00</p>
+          <p class="score" id="number">Question: 0/10</p>
+        </div>
+        <div class="quiz-container">
+          <p class="head">Geography Quiz</p>
+          <p id="question"></p>
+          <div class="option-container">
+            <button id="option1" class="option"></button>
+            <button id="option2" class="option"></button>
+            <button id="option3" class="option"></button>
+            <button id="option4" class="option"></button>
+          </div>
+          <button type="button" class="button" id="next">Next</button>
+          <p class="error display">*Please select any of the option</p>
+        </div>
+      </div>
+      <div class="second-container">
+        <p class="text">Score</p>
+        <p class="text" id="score"></p>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress"></div>
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+        <button class="button" type="button" id="again">Start Again</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
